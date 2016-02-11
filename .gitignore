@@ -1,0 +1,11 @@
+# python precompiled files:
+*.pyc
+*.pyo
+
+# temp gedit
+*~
+
+# temp ide
+.idea
+
+migrations/
