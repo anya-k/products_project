@@ -10,23 +10,24 @@
    <table  class="table table-striped ">
     <thead>
       <tr>
-       <th>#</th><th>Имя</th><th>Описание</th><th>Цена</th>
+       <th>#</th><th>Имя</th><th>Цена</th><th>Описание</th>
       </tr>
     </thead>
     <tbody>
     {% for product in object_list %}
       <tr>
        <td>{{ forloop.counter }}</td>
-       <td class="intro-text"><a href="{% url 'products:product_detail' %}?product_id={{ product.id }}">
+       <td class="intro-text">
+         <a href="{% url 'products:product_detail' product.category.slug product.slug %}">
            {{ product.name }}</a></td>
-       <td>{{ product.discription }}</td>
        <td>{{ product.price }}</td>
+       <td>{{ product.description }}</td>
       </tr>
     {% endfor %}
     </tbody>
   </table>
   {% else %}
-    <p><br />Пока нет категорий</p>
+    <p><br />Пока нет продуктов этой категорий</p>
   {% endif %}
 
 {% endblock content %}
