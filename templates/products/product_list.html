@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+
+{% block title %} Торты {% endblock title %}
+
+{% block content %}
+
+  {% if object_list %}
+  <h2>Торты категории</h2>
+   <table  class="table table-striped ">
+    <thead>
+      <tr>
+       <th>#</th><th>Имя</th><th>Описание</th><th>Цена</th>
+      </tr>
+    </thead>
+    <tbody>
+    {% for product in object_list %}
+      <tr>
+       <td>{{ forloop.counter }}</td>
+       <td class="intro-text"><a href="{% url 'products:product_detail' %}?product_id={{ product.id }}">
+           {{ product.name }}</a></td>
+       <td>{{ product.discription }}</td>
+       <td>{{ product.price }}</td>
+      </tr>
+    {% endfor %}
+    </tbody>
+  </table>
+  {% else %}
+    <p><br />Пока нет категорий</p>
+  {% endif %}
+
+{% endblock content %}
