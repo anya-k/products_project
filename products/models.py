@@ -1,10 +1,7 @@
 from __future__ import unicode_literals
 from django.utils import timezone
-from django.db.models.signals import pre_save
-from django.dispatch import receiver
 from django.db import models
-from django.template.defaultfilters import slugify
-from django.conf import settings
+from pytils.translit import slugify
 
 
 class Category(models.Model):
@@ -41,17 +38,3 @@ class Product(models.Model):
         else:
             self.modified_at = timezone.now()
         super(Product, self).save(*args, **kwargs)
-
-
-
-# @receiver(pre_save, sender=Product)
-# def save_object(instance, **kwargs):
-#     p = Product()
-#     if kwargs.get('created', False):
-#         p.slug = slugify(p.name)
-#         p.created_at = timezone.now()
-#         p.modified_at = timezone.now()
-#     else:
-#         p.modified_at = timezone.now()
-
-
