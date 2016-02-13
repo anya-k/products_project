@@ -1,16 +1,14 @@
 {% extends 'base.html' %}
 {% load staticfiles %}
 
-{% block title %} Торты {% endblock title %}
-
 {% block content %}
 
   {% if object_list %}
-  <h2>Торты категории</h2>
+  <h2>{{ category.name }}</h2>
    <table  class="table table-striped ">
     <thead>
       <tr>
-       <th>#</th><th>Имя</th><th>Цена</th><th>Описание</th>
+       <th></th><th>Имя</th><th>Цена</th><th>Описание</th>
       </tr>
     </thead>
     <tbody>

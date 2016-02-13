@@ -10,8 +10,9 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
+    <title>
     {% block title %} Торты {% endblock title %}
-
+    </title>
 
     <!-- Bootstrap Core CSS -->
     <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
@@ -58,10 +59,7 @@
                         <a href="{% url 'products:category_list' %}">Категории</a>
                     </li>
                     <li>
-                        <a href="/">Новые товары</a>
-                    </li>
-                    <li>
-                        <a href="/">Contact</a>
+                        <a href="{% url 'products:product_new' %}">Новые товары</a>
                     </li>
                 </ul>
             </div>

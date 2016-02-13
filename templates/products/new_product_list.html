@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+
+{% block title %} Новые {% endblock title %}
+
+{% block content %}
+
+  {% if object_list and category_list %}
+    {% for key, value in category_list.items %}
+    <h2>{{ key.name }}</h2>
+   <table  class="table table-striped ">
+    <thead>
+      <tr>
+       <th></th><th>Имя</th><th>Цена</th><th>Описание</th>
+      </tr>
+    </thead>
+    <tbody>
+    {% for product in value %}
+        <tr>
+         <td>{{ forloop.counter }}</td>
+         <td class="intro-text">
+           <a href="{% url 'products:product_detail' product.category.slug product.slug %}">
+             {{ product.name }}</a></td>
+         <td>{{ product.price }}</td>
+         <td>{{ product.description }}</td>
+        </tr>
+    {% endfor %}
+    </tbody>
+  </table>
+    {% endfor %}
+  {% else %}
+    <p><br />Пока нет продуктов</p>
+  {% endif %}
+
+{% endblock content %}
