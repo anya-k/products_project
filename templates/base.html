@@ -36,11 +36,23 @@
 <body>
 
     <div class="brand">Python Test Task</div>
-    <div class="address-bar"></div>
+    <div class="address-bar" >
+       {% block auth %}
+          {% if user.is_authenticated %}
+              Logged in: {{ user.username }}
+              (<a href="{% url 'auth_logout' %}?next=/">Log out</a> |
+              <a href="{% url 'auth_password_change' %}">Change password</a>)
+          {% else %}
+             <a href="{% url 'auth_login' %}">Log in</a>
+          {% endif %}
+
+      {% endblock %}
+    </div>
 
     <!-- Navigation -->
     <nav class="navbar navbar-default" role="navigation">
         <div class="container">
+
             <!-- Brand and toggle get grouped for better mobile display -->
 			<div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
@@ -51,6 +63,7 @@
                 </button>
                 <!-- navbar-brand is hidden on larger screens, but visible when the menu is collapsed -->
                 <a class="navbar-brand" href="{% url 'index' %}">Python Test Task</a>
+
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -112,7 +125,11 @@
         </div>
     </footer>
 
-    
+    <!-- jQuery -->
+    <script src="{% static 'js/jquery.js' %}"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
 
 </body>
 

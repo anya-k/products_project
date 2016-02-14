@@ -2,6 +2,9 @@ from django.views.generic.list import ListView
 from django.views.generic import DetailView
 from django.shortcuts import render
 import datetime
+from django.core.urlresolvers import reverse_lazy
+from django.contrib.auth.decorators import login_required
+from django.utils.decorators import method_decorator
 
 from models import Category, Product
 
@@ -39,7 +42,7 @@ class ProductDetailView(DetailView):
     template_name = 'products/product_detail.html'
 
 
-hours_delta = 24
+hours_delta = 48
 
 
 class LastAddProductListView(ListView):
@@ -64,4 +67,9 @@ class LastAddProductListView(ListView):
 
         context['category_list'] = category_list
         return context
+
+    @method_decorator(login_required)
+    def dispatch(self, *args, **kwargs):
+        return super(LastAddProductListView, self).dispatch(*args, **kwargs)
+
 

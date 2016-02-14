@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% load i18n %}
+{% block title %}
+    Log in
+{% endblock %}
+
+{% block content %}
+<form method="post" action=".">
+  {% csrf_token %}
+    <dl class="register">
+    {% for field in form %}
+        <dt>{{ field.label_tag }}</dt>
+        <dd class="clearfix">{{ field }}
+        {% if field.help_text %}<div class="clearfix">{{ field.help_text }}</div>{% endif %}
+        {% if field.errors %}<div class="myerrors clearfix">{{ field.errors }}</div>{% endif %}
+        </dd>
+    {% endfor %}
+    </dl>
+
+  <input type="submit" value="Log in" />
+  <input type="hidden" name="next" value="{{ next }}" />
+</form>
+<br/>
+<p>You are not a member? <a href="{% url 'registration_register' %}?next={{ request.GET.next }}">Register!</a></p>
+{% endblock %}
