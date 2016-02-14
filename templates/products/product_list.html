@@ -3,6 +3,7 @@
 
 {% block content %}
 
+{% if category %}
   {% if object_list %}
   <h2>{{ category.name }}</h2>
    <table  class="table table-striped ">
@@ -27,5 +28,8 @@
   {% else %}
     <p><br />Пока нет продуктов этой категорий</p>
   {% endif %}
+{% else %}
+  <p><br />Категория не найдена</p>
+{% endif %}
 
 {% endblock content %}

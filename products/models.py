@@ -2,6 +2,8 @@ from __future__ import unicode_literals
 from django.utils import timezone
 from django.db import models
 from pytils.translit import slugify
+from decimal import Decimal
+from django.core.validators import MinValueValidator
 
 
 def slug_create(self):
@@ -38,7 +40,7 @@ class Product(models.Model):
     name = models.CharField(max_length=40)
     slug = models.SlugField(max_length=50, unique=True)
     description = models.TextField()
-    price = models.DecimalField(max_digits=10, decimal_places=2)
+    price = models.DecimalField(max_digits=10, decimal_places=2, validators=[MinValueValidator(Decimal('0.01'))])
     created_at = models.DateTimeField()
     modified_at = models.DateTimeField()
     category = models.ForeignKey(Category)
