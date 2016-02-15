@@ -8,6 +8,8 @@ from django.utils.decorators import method_decorator
 
 from models import Category, Product
 
+hours_delta = 24
+
 
 def index(request):
     return render(request, 'base.html')
@@ -40,9 +42,6 @@ class ProductDetailView(DetailView):
     model = Product
     query_pk_and_slug = True
     template_name = 'products/product_detail.html'
-
-
-hours_delta = 48
 
 
 class LastAddProductListView(ListView):

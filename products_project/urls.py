@@ -23,5 +23,5 @@ urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^products/', include('products.urls', namespace='products')),
     url(r'^accounts/', include('registration.backends.simple.urls')),
-    url(r'^', views.index, name='index'),
+    url(r'^$', views.index, name='index'),
 ]+ static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
