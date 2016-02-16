@@ -1,6 +1,358 @@
 [
 {
   "fields": {
+    "codename": "add_logentry",
+    "name": "Can add log entry",
+    "content_type": 1
+  },
+  "model": "auth.permission",
+  "pk": 1
+},
+{
+  "fields": {
+    "codename": "change_logentry",
+    "name": "Can change log entry",
+    "content_type": 1
+  },
+  "model": "auth.permission",
+  "pk": 2
+},
+{
+  "fields": {
+    "codename": "delete_logentry",
+    "name": "Can delete log entry",
+    "content_type": 1
+  },
+  "model": "auth.permission",
+  "pk": 3
+},
+{
+  "fields": {
+    "codename": "add_permission",
+    "name": "Can add permission",
+    "content_type": 2
+  },
+  "model": "auth.permission",
+  "pk": 4
+},
+{
+  "fields": {
+    "codename": "change_permission",
+    "name": "Can change permission",
+    "content_type": 2
+  },
+  "model": "auth.permission",
+  "pk": 5
+},
+{
+  "fields": {
+    "codename": "delete_permission",
+    "name": "Can delete permission",
+    "content_type": 2
+  },
+  "model": "auth.permission",
+  "pk": 6
+},
+{
+  "fields": {
+    "codename": "add_group",
+    "name": "Can add group",
+    "content_type": 3
+  },
+  "model": "auth.permission",
+  "pk": 7
+},
+{
+  "fields": {
+    "codename": "change_group",
+    "name": "Can change group",
+    "content_type": 3
+  },
+  "model": "auth.permission",
+  "pk": 8
+},
+{
+  "fields": {
+    "codename": "delete_group",
+    "name": "Can delete group",
+    "content_type": 3
+  },
+  "model": "auth.permission",
+  "pk": 9
+},
+{
+  "fields": {
+    "codename": "add_user",
+    "name": "Can add user",
+    "content_type": 4
+  },
+  "model": "auth.permission",
+  "pk": 10
+},
+{
+  "fields": {
+    "codename": "change_user",
+    "name": "Can change user",
+    "content_type": 4
+  },
+  "model": "auth.permission",
+  "pk": 11
+},
+{
+  "fields": {
+    "codename": "delete_user",
+    "name": "Can delete user",
+    "content_type": 4
+  },
+  "model": "auth.permission",
+  "pk": 12
+},
+{
+  "fields": {
+    "codename": "add_contenttype",
+    "name": "Can add content type",
+    "content_type": 5
+  },
+  "model": "auth.permission",
+  "pk": 13
+},
+{
+  "fields": {
+    "codename": "change_contenttype",
+    "name": "Can change content type",
+    "content_type": 5
+  },
+  "model": "auth.permission",
+  "pk": 14
+},
+{
+  "fields": {
+    "codename": "delete_contenttype",
+    "name": "Can delete content type",
+    "content_type": 5
+  },
+  "model": "auth.permission",
+  "pk": 15
+},
+{
+  "fields": {
+    "codename": "add_session",
+    "name": "Can add session",
+    "content_type": 6
+  },
+  "model": "auth.permission",
+  "pk": 16
+},
+{
+  "fields": {
+    "codename": "change_session",
+    "name": "Can change session",
+    "content_type": 6
+  },
+  "model": "auth.permission",
+  "pk": 17
+},
+{
+  "fields": {
+    "codename": "delete_session",
+    "name": "Can delete session",
+    "content_type": 6
+  },
+  "model": "auth.permission",
+  "pk": 18
+},
+{
+  "fields": {
+    "codename": "add_category",
+    "name": "Can add category",
+    "content_type": 7
+  },
+  "model": "auth.permission",
+  "pk": 19
+},
+{
+  "fields": {
+    "codename": "change_category",
+    "name": "Can change category",
+    "content_type": 7
+  },
+  "model": "auth.permission",
+  "pk": 20
+},
+{
+  "fields": {
+    "codename": "delete_category",
+    "name": "Can delete category",
+    "content_type": 7
+  },
+  "model": "auth.permission",
+  "pk": 21
+},
+{
+  "fields": {
+    "codename": "add_product",
+    "name": "Can add product",
+    "content_type": 8
+  },
+  "model": "auth.permission",
+  "pk": 22
+},
+{
+  "fields": {
+    "codename": "change_product",
+    "name": "Can change product",
+    "content_type": 8
+  },
+  "model": "auth.permission",
+  "pk": 23
+},
+{
+  "fields": {
+    "codename": "delete_product",
+    "name": "Can delete product",
+    "content_type": 8
+  },
+  "model": "auth.permission",
+  "pk": 24
+},
+{
+  "fields": {
+    "username": "admin",
+    "first_name": "",
+    "last_name": "",
+    "is_active": true,
+    "is_superuser": true,
+    "is_staff": true,
+    "last_login": "2016-02-16T07:58:55Z",
+    "groups": [],
+    "user_permissions": [],
+    "password": "pbkdf2_sha256$20000$83PQmF6LqWUs$WUvNVAIH2wkIIaVL9nCyhej7uoRp3fT0Yb0+2Kisi7g=",
+    "email": "admin@gmail.com",
+    "date_joined": "2016-02-11T23:42:53Z"
+  },
+  "model": "auth.user",
+  "pk": 1
+},
+{
+  "fields": {
+    "username": "User1",
+    "first_name": "",
+    "last_name": "",
+    "is_active": true,
+    "is_superuser": false,
+    "is_staff": false,
+    "last_login": "2016-02-14T14:44:37Z",
+    "groups": [],
+    "user_permissions": [],
+    "password": "pbkdf2_sha256$20000$aRlYwqOxE9TJ$BVjpBWDJas5o3iMR/vEb6/0zAwHZgpwephUok1wjk8s=",
+    "email": "qwe@gmail.com",
+    "date_joined": "2016-02-14T14:44:36Z"
+  },
+  "model": "auth.user",
+  "pk": 2
+},
+{
+  "fields": {
+    "expire_date": "2016-03-01T07:58:55Z",
+    "session_data": "ZjhmZTA4M2UyMzQ0M2FiMTFhMDljNWY1N2M1NzQ0ZGU0MzE0MDU1MDp7Il9hdXRoX3VzZXJfaGFzaCI6IjU5NDMyNDJkNWM4MjhjZjJkNzZlMzdhNjIyZGZjNWM0NDBhOGJhNTgiLCJfYXV0aF91c2VyX2JhY2tlbmQiOiJkamFuZ28uY29udHJpYi5hdXRoLmJhY2tlbmRzLk1vZGVsQmFja2VuZCIsIl9hdXRoX3VzZXJfaWQiOiIxIn0="
+  },
+  "model": "sessions.session",
+  "pk": "bk739j5loly447rjissm0h5esui4keln"
+},
+{
+  "fields": {
+    "description": "\u0422\u043e\u0440\u0442\u044b \u0438\u0437 \u0431\u0438\u0441\u043a\u0432\u0438\u0442\u043d\u043e\u0433\u043e \u0442\u0435\u0441\u0442\u0430 \u043f\u043e\u043b\u0443\u0447\u0430\u044e\u0442\u0441\u044f \u043f\u044b\u0448\u043d\u044b\u043c\u0438 \u0438 \u043d\u0435\u0436\u043d\u044b\u043c\u0438. \u0414\u043b\u044f \u0434\u043e\u0441\u0442\u0438\u0436\u0435\u043d\u0438\u044f \u043d\u0443\u0436\u043d\u043e\u0433\u043e \u0432\u043a\u0443\u0441\u0430 \u0432 \u0431\u0438\u0441\u043a\u0432\u0438\u0442\u043d\u044b\u0435 \u043a\u043e\u0440\u0436\u0438 \u0434\u043e\u0431\u0430\u0432\u043b\u044f\u044e\u0442 \u0432\u0430\u043d\u0438\u043b\u044c, \u043a\u0430\u043a\u0430\u043e, \u043e\u0440\u0435\u0448\u043a\u0438 \u0438 \u043f\u0440\u043e\u0447\u0438\u0435 \u0438\u043d\u0433\u0440\u0435\u0434\u0438\u0435\u043d\u0442\u044b. \u041a\u043e\u0440\u0436\u0438 \u043f\u0440\u043e\u043f\u0438\u0442\u044b\u0432\u0430\u044e\u0442\u0441\u044f \u0438 \u043d\u0430\u043a\u043b\u0430\u0434\u044b\u0432\u0430\u044e\u0442\u0441\u044f \u0434\u0440\u0443\u0433 \u043d\u0430 \u0434\u0440\u0443\u0433\u0430, \u043c\u0435\u0436\u0434\u0443 \u043a\u043e\u0440\u0436\u0430\u043c\u0438 \u0443\u043a\u043b\u0430\u0434\u044b\u0432\u0430\u0435\u0442\u0441\u044f \u043a\u0440\u0435\u043c\u043e\u0432\u0430\u044f, \u0439\u043e\u0433\u0443\u0440\u0442\u043e\u0432\u0430\u044f \u0438\u043b\u0438 \u0448\u043e\u043a\u043e\u043b\u0430\u0434\u043d\u0430\u044f \u043d\u0430\u0447\u0438\u043d\u043a\u0430. \u042d\u0442\u043e \u0441\u0430\u043c\u0430\u044f \u0432\u043a\u0443\u0441\u043d\u0430\u044f \u0438 \u0440\u0430\u0441\u043f\u0440\u043e\u0441\u0442\u0440\u0430\u043d\u0435\u043d\u043d\u0430\u044f \u0440\u0430\u0437\u043d\u043e\u0432\u0438\u0434\u043d\u043e\u0441\u0442\u044c \u0442\u043e\u0440\u0442\u043e\u0432.",
+    "name": "\u0411\u0438\u0441\u043a\u0432\u0438\u0442\u043d\u044b\u0435",
+    "slug": "biskvitnyie"
+  },
+  "model": "products.category",
+  "pk": 1
+},
+{
+  "fields": {
+    "description": "\u0413\u043e\u0442\u043e\u0432\u044f\u0442\u0441\u044f \u0438\u0437 \u0440\u0430\u0441\u0441\u044b\u043f\u0447\u0430\u0442\u043e\u0433\u043e \u043f\u0435\u0441\u043e\u0447\u043d\u043e\u0433\u043e \u0442\u0435\u0441\u0442\u0430. \u042d\u0442\u0438 \u0442\u043e\u0440\u0442\u044b \u0441\u0430\u043c\u044b\u0435 \u0434\u0435\u0448\u0435\u0432\u044b\u0435 \u0432 \u043f\u0440\u0438\u0433\u043e\u0442\u043e\u0432\u043b\u0435\u043d\u0438\u0438. \u041d\u0430\u0447\u0438\u043d\u043a\u0430 \u0443 \u0442\u0430\u043a\u0438\u0445 \u0442\u043e\u0440\u0442\u043e\u0432 \u0431\u044b\u0432\u0430\u0435\u0442 \u0444\u0440\u0443\u043a\u0442\u043e\u0432\u0430\u044f \u0438\u043b\u0438 \u043a\u0440\u0435\u043c\u043e\u0432\u0430\u044f.",
+    "name": "\u041f\u0435\u0441\u043e\u0447\u043d\u044b\u0435",
+    "slug": "pesochnyie"
+  },
+  "model": "products.category",
+  "pk": 2
+},
+{
+  "fields": {
+    "description": "\u042d\u0442\u043e\u0442 \u0432\u0438\u0434 \u0442\u043e\u0440\u0442\u043e\u0432 \u0433\u043e\u0442\u043e\u0432\u0438\u0442\u0441\u044f \u043f\u043e\u043b\u043d\u043e\u0441\u0442\u044c\u044e \u0438\u0437 \u0442\u0432\u043e\u0440\u043e\u0436\u043d\u043e-\u043c\u0443\u0447\u043d\u043e\u0439 \u043c\u0430\u0441\u0441\u044b. \u041a\u0430\u043a \u043f\u0440\u0430\u0432\u0438\u043b\u043e \u0442\u0432\u043e\u0440\u043e\u0436\u043d\u044b\u0439 \u0442\u043e\u0440\u0442 \u0441\u043e\u0434\u0435\u0440\u0436\u0438\u0442 \u043a\u0443\u0441\u043e\u0447\u043a\u0438 \u0444\u0440\u0443\u043a\u0442\u043e\u0432, \u043a\u043e\u0442\u043e\u0440\u044b\u0435 \u0445\u043e\u0440\u043e\u0448\u043e \u0441\u043e\u0447\u0435\u0442\u0430\u044e\u0442\u0441\u044f \u0441 \u0442\u0432\u043e\u0440\u043e\u0433\u043e\u043c.",
+    "name": "\u0422\u0432\u043e\u0440\u043e\u0436\u043d\u044b\u0435",
+    "slug": "tvorozhnyie"
+  },
+  "model": "products.category",
+  "pk": 3
+},
+{
+  "fields": {
+    "category": 1,
+    "description": "\u0412\u043a\u0443\u0441 \u041c\u0435\u0434\u043e\u0432\u0438\u043a\u0430 \u043d\u0430\u0441\u0442\u043e\u043b\u044c\u043a\u043e \u043f\u0440\u0438\u044f\u0442\u043d\u044b\u0439, \u043d\u0435\u0436\u043d\u044b\u0439 \u0438 \u0430\u0440\u043e\u043c\u0430\u0442\u043d\u044b\u0439, \u0447\u0442\u043e \u0412\u0430\u043c \u0431\u0443\u0434\u0435\u0442 \u0442\u044f\u0436\u0435\u043b\u043e \u0435\u0433\u043e \u0437\u0430\u0431\u044b\u0442\u044c, \u043f\u043e\u043f\u0440\u043e\u0431\u043e\u0432\u0430\u0432 \u044d\u0442\u043e\u0442 \u0442\u043e\u0440\u0442 \u0445\u043e\u0442\u044f \u0431\u044b \u0440\u0430\u0437. ",
+    "price": "220.00",
+    "modified_at": "2016-02-12T00:29:55Z",
+    "slug": "medovik",
+    "created_at": "2016-02-12T00:02:06Z",
+    "name": "\u041c\u0435\u0434\u043e\u0432\u0438\u043a"
+  },
+  "model": "products.product",
+  "pk": 1
+},
+{
+  "fields": {
+    "category": 1,
+    "description": "\u041f\u0440\u043e\u0434\u0443\u043a\u0442\u044b, \u043d\u0435\u043e\u0431\u0445\u043e\u0434\u0438\u043c\u044b\u0435 \u0434\u043b\u044f \u043f\u0440\u0438\u0433\u043e\u0442\u043e\u0432\u043b\u0435\u043d\u0438\u044f \u0448\u043e\u043a\u043e\u043b\u0430\u0434\u043d\u043e\u0433\u043e \u0442\u043e\u0440\u0442\u0430, \u043d\u0430\u0439\u0434\u0443\u0442\u0441\u044f \u043f\u0440\u0430\u043a\u0442\u0438\u0447\u0435\u0441\u043a\u0438 \u0432 \u043a\u0430\u0436\u0434\u043e\u043c \u0434\u043e\u043c\u0435. \u041d\u0435\u0436\u043d\u044b\u0439, \u0432\u043e\u0437\u0434\u0443\u0448\u043d\u044b\u0439 \u0448\u043e\u043a\u043e\u043b\u0430\u0434\u043d\u044b\u0439 \u0431\u0438\u0441\u043a\u0432\u0438\u0442 \u043d\u0435 \u043e\u0441\u0442\u0430\u0432\u0438\u0442 \u0440\u0430\u0432\u043d\u043e\u0434\u0443\u0448\u043d\u044b\u043c\u0438 \u0412\u0430\u0441 \u0438 \u0412\u0430\u0448\u0443 \u0441\u0435\u043c\u044c\u044e.",
+    "price": "270.00",
+    "modified_at": "2016-02-12T00:29:48Z",
+    "slug": "shokoladnyij-tort",
+    "created_at": "2016-02-12T00:09:12Z",
+    "name": "\u0428\u043e\u043a\u043e\u043b\u0430\u0434\u043d\u044b\u0439 \u0442\u043e\u0440\u0442"
+  },
+  "model": "products.product",
+  "pk": 2
+},
+{
+  "fields": {
+    "category": 3,
+    "description": "\u041a\u043b\u0430\u0441\u0441\u0438\u0447\u0435\u0441\u043a\u0438\u0439 \u0447\u0438\u0437\u043a\u0435\u0439\u043a \u0441\u043e \u0441\u043b\u0438\u0432\u043e\u0447\u043d\u044b\u043c \u043a\u0440\u0435\u043c\u043e\u043c, \u0443\u043a\u0440\u0430\u0448\u0435\u043d\u043d\u044b\u0439 \u0441\u043f\u0435\u043b\u044b\u043c\u0438 \u044f\u0433\u043e\u0434\u0430\u043c\u0438 \u0432\u0438\u0448\u043d\u0438.",
+    "price": "370.00",
+    "modified_at": "2016-02-16T08:01:02Z",
+    "slug": "vishnevyij-chizkejk",
+    "created_at": "2016-02-16T02:59:27Z",
+    "name": "\u0412\u0438\u0448\u043d\u0435\u0432\u044b\u0439 \u0447\u0438\u0437\u043a\u0435\u0439\u043a"
+  },
+  "model": "products.product",
+  "pk": 3
+},
+{
+  "fields": {
+    "category": 1,
+    "description": "\u041e\u0440\u0438\u0433\u0438\u043d\u0430\u043b\u044c\u043d\u044b\u0439 \u0442\u043e\u0440\u0442 \u0417\u043e\u043b\u043e\u0442\u043e\u0439 \u043a\u043b\u044e\u0447\u0438\u043a \u0441\u043e\u0441\u0442\u043e\u0438\u0442 \u0438\u0437 \u0434\u0432\u0443\u0445 \u0441\u043b\u043e\u0435\u0432 \u0431\u0438\u0441\u043a\u0432\u0438\u0442\u043d\u044b\u0445 \u043a\u043e\u0440\u0436\u0435\u0439, \u0441\u0432\u0435\u0442\u043b\u043e\u0433\u043e \u0438 \u0442\u0435\u043c\u043d\u043e\u0433\u043e. \u041a\u043e\u0440\u0436\u0438, \u0441\u043e\u0435\u0434\u0438\u043d\u0435\u043d\u043d\u044b\u0435 \u043a\u0440\u0435\u043c\u043e\u043c, \u043f\u043e\u0432\u0435\u0440\u0445\u043d\u043e\u0441\u0442\u044c \u0442\u043e\u0440\u0442\u0430 \u0443\u043a\u0440\u0430\u0448\u0435\u043d\u0430 \u0440\u0438\u0441\u0443\u043d\u043a\u043e\u043c \u0438\u0437 \u043a\u0440\u0435\u043c\u0430, \u0430 \u0431\u043e\u043a\u043e\u0432\u0430\u044f \u043f\u043e\u0432\u0435\u0440\u0445\u043d\u043e\u0441\u0442\u044c \u0442\u043e\u0440\u0442\u0430 \u043e\u0431\u0441\u044b\u043f\u0430\u043d\u0430 \u0431\u0438\u0441\u043a\u0432\u0438\u0442\u043d\u043e\u0439 \u043a\u0440\u043e\u0448\u043a\u043e\u0439.",
+    "price": "130.00",
+    "modified_at": "2016-02-16T08:00:46Z",
+    "slug": "zolotoj-klyuchik",
+    "created_at": "2016-02-16T02:52:20Z",
+    "name": "\u0417\u043e\u043b\u043e\u0442\u043e\u0439 \u043a\u043b\u044e\u0447\u0438\u043a"
+  },
+  "model": "products.product",
+  "pk": 8
+},
+{
+  "fields": {
+    "category": 1,
+    "description": "\u0411\u0438\u0441\u043a\u0432\u0438\u0442 \u0441 \u043a\u0430\u043a\u0430\u043e, \u043c\u043e\u043b\u043e\u0447\u043d\u0430\u044f \u043d\u0430\u0447\u0438\u043d\u043a\u0430, \u043a\u043e\u043d\u0441\u0435\u0440\u0432\u0438\u0440\u043e\u0432\u0430\u043d\u043d\u044b\u0435 \u043f\u0435\u0440\u0441\u0438\u043a\u0438. \u0412\u044b\u043f\u0435\u043a\u0430\u0435\u0442\u0441\u044f \u043f\u043e \u0442\u0440\u0430\u0434\u0438\u0446\u0438\u043e\u043d\u043d\u043e\u0439 \u0442\u0435\u0445\u043d\u043e\u043b\u043e\u0433\u0438\u0438 \u0438\u0437 \u0432\u044b\u0441\u043e\u043a\u043e\u043a\u0430\u0447\u0435\u0441\u0442\u0432\u0435\u043d\u043d\u043e\u0433\u043e \u044d\u043a\u043e\u043b\u043e\u0433\u0438\u0447\u0435\u0441\u043a\u0438 \u0447\u0438\u0441\u0442\u043e\u0433\u043e \u043d\u0430\u0442\u0443\u0440\u0430\u043b\u044c\u043d\u043e\u0433\u043e \u0441\u044b\u0440\u044c\u044f. \u0412\u0441\u044f \u043f\u0440\u043e\u0434\u0443\u043a\u0446\u0438\u044f \u043e\u0442\u0432\u0435\u0447\u0430\u0435\u0442 \u0442\u0440\u0435\u0431\u043e\u0432\u0430\u043d\u0438\u044f\u043c \u0434\u0435\u0439\u0441\u0442\u0432\u0443\u044e\u0449\u0438\u0445 \u0433\u043e\u0441\u0443\u0434\u0430\u0440\u0441\u0442\u0432\u0435\u043d\u043d\u044b\u0445 \u0441\u0442\u0430\u043d\u0434\u0430\u0440\u0442\u043e\u0432. \u0423\u043f\u0430\u043a\u043e\u0432\u043e\u0447\u043d\u044b\u0435 \u043c\u0430\u0442\u0435\u0440\u0438\u0430\u043b\u044b \u043e\u0431\u0435\u0441\u043f\u0435\u0447\u0438\u0432\u0430\u044e\u0442 \u0434\u043b\u0438\u0442\u0435\u043b\u044c\u043d\u043e\u0435 \u0441\u043e\u0445\u0440\u0430\u043d\u0435\u043d\u0438\u0435 \u043f\u043e\u0442\u0440\u0435\u0431\u0438\u0442\u0435\u043b\u044c\u0441\u043a\u0438\u0445 \u0441\u0432\u043e\u0439\u0441\u0442\u0432 \u0438 \u0432\u044b\u0441\u043e\u043a\u0438\u0435 \u0432\u043a\u0443\u0441\u043e\u0432\u044b\u0435 \u043a\u0430\u0447\u0435\u0441\u0442\u0432\u0430 \u043f\u0440\u043e\u0434\u0443\u043a\u0446\u0438\u0438.",
+    "price": "150.00",
+    "modified_at": "2016-02-16T08:00:01Z",
+    "slug": "daromir",
+    "created_at": "2016-02-15T19:11:52Z",
+    "name": "\u0414\u0430\u0440\u043e\u043c\u0438\u0440"
+  },
+  "model": "products.product",
+  "pk": 9
+},
+{
+  "fields": {
     "action_flag": 1,
     "action_time": "2016-02-11T23:43:49Z",
     "object_repr": "\u0411\u0438\u0441\u043a\u0432\u0438\u0442\u043d\u044b\u0435",
@@ -131,63 +483,379 @@
 },
 {
   "fields": {
-    "expire_date": "2016-02-25T23:43:05Z",
-    "session_data": "ZjhmZTA4M2UyMzQ0M2FiMTFhMDljNWY1N2M1NzQ0ZGU0MzE0MDU1MDp7Il9hdXRoX3VzZXJfaGFzaCI6IjU5NDMyNDJkNWM4MjhjZjJkNzZlMzdhNjIyZGZjNWM0NDBhOGJhNTgiLCJfYXV0aF91c2VyX2JhY2tlbmQiOiJkamFuZ28uY29udHJpYi5hdXRoLmJhY2tlbmRzLk1vZGVsQmFja2VuZCIsIl9hdXRoX3VzZXJfaWQiOiIxIn0="
+    "action_flag": 1,
+    "action_time": "2016-02-12T20:43:11Z",
+    "object_repr": "\u0422\u0432\u043e\u0440\u043e\u0436\u043d\u044b\u0435",
+    "object_id": "4",
+    "change_message": "",
+    "user": 1,
+    "content_type": 7
   },
-  "model": "sessions.session",
-  "pk": "2yz1pglxqc5s6k92tl74v73e9ououq17"
+  "model": "admin.logentry",
+  "pk": 11
 },
 {
   "fields": {
-    "description": "\u0422\u043e\u0440\u0442\u044b \u0438\u0437 \u0431\u0438\u0441\u043a\u0432\u0438\u0442\u043d\u043e\u0433\u043e \u0442\u0435\u0441\u0442\u0430 \u043f\u043e\u043b\u0443\u0447\u0430\u044e\u0442\u0441\u044f \u043f\u044b\u0448\u043d\u044b\u043c\u0438 \u0438 \u043d\u0435\u0436\u043d\u044b\u043c\u0438. \u0414\u043b\u044f \u0434\u043e\u0441\u0442\u0438\u0436\u0435\u043d\u0438\u044f \u043d\u0443\u0436\u043d\u043e\u0433\u043e \u0432\u043a\u0443\u0441\u0430 \u0432 \u0431\u0438\u0441\u043a\u0432\u0438\u0442\u043d\u044b\u0435 \u043a\u043e\u0440\u0436\u0438 \u0434\u043e\u0431\u0430\u0432\u043b\u044f\u044e\u0442 \u0432\u0430\u043d\u0438\u043b\u044c, \u043a\u0430\u043a\u0430\u043e, \u043e\u0440\u0435\u0448\u043a\u0438 \u0438 \u043f\u0440\u043e\u0447\u0438\u0435 \u0438\u043d\u0433\u0440\u0435\u0434\u0438\u0435\u043d\u0442\u044b. \u041a\u043e\u0440\u0436\u0438 \u043f\u0440\u043e\u043f\u0438\u0442\u044b\u0432\u0430\u044e\u0442\u0441\u044f \u0438 \u043d\u0430\u043a\u043b\u0430\u0434\u044b\u0432\u0430\u044e\u0442\u0441\u044f \u0434\u0440\u0443\u0433 \u043d\u0430 \u0434\u0440\u0443\u0433\u0430, \u043c\u0435\u0436\u0434\u0443 \u043a\u043e\u0440\u0436\u0430\u043c\u0438 \u0443\u043a\u043b\u0430\u0434\u044b\u0432\u0430\u0435\u0442\u0441\u044f \u043a\u0440\u0435\u043c\u043e\u0432\u0430\u044f, \u0439\u043e\u0433\u0443\u0440\u0442\u043e\u0432\u0430\u044f \u0438\u043b\u0438 \u0448\u043e\u043a\u043e\u043b\u0430\u0434\u043d\u0430\u044f \u043d\u0430\u0447\u0438\u043d\u043a\u0430. \u042d\u0442\u043e \u0441\u0430\u043c\u0430\u044f \u0432\u043a\u0443\u0441\u043d\u0430\u044f \u0438 \u0440\u0430\u0441\u043f\u0440\u043e\u0441\u0442\u0440\u0430\u043d\u0435\u043d\u043d\u0430\u044f \u0440\u0430\u0437\u043d\u043e\u0432\u0438\u0434\u043d\u043e\u0441\u0442\u044c \u0442\u043e\u0440\u0442\u043e\u0432.",
-    "name": "\u0411\u0438\u0441\u043a\u0432\u0438\u0442\u043d\u044b\u0435",
-    "slug": "biskvitnyie"
+    "action_flag": 1,
+    "action_time": "2016-02-12T20:43:29Z",
+    "object_repr": "\u0422\u0432\u043e\u0440\u043e\u0436\u043d\u044b\u0435",
+    "object_id": "5",
+    "change_message": "",
+    "user": 1,
+    "content_type": 7
   },
-  "model": "products.category",
-  "pk": 1
+  "model": "admin.logentry",
+  "pk": 12
 },
 {
   "fields": {
-    "description": "\u0413\u043e\u0442\u043e\u0432\u044f\u0442\u0441\u044f \u0438\u0437 \u0440\u0430\u0441\u0441\u044b\u043f\u0447\u0430\u0442\u043e\u0433\u043e \u043f\u0435\u0441\u043e\u0447\u043d\u043e\u0433\u043e \u0442\u0435\u0441\u0442\u0430. \u042d\u0442\u0438 \u0442\u043e\u0440\u0442\u044b \u0441\u0430\u043c\u044b\u0435 \u0434\u0435\u0448\u0435\u0432\u044b\u0435 \u0432 \u043f\u0440\u0438\u0433\u043e\u0442\u043e\u0432\u043b\u0435\u043d\u0438\u0438. \u041d\u0430\u0447\u0438\u043d\u043a\u0430 \u0443 \u0442\u0430\u043a\u0438\u0445 \u0442\u043e\u0440\u0442\u043e\u0432 \u0431\u044b\u0432\u0430\u0435\u0442 \u0444\u0440\u0443\u043a\u0442\u043e\u0432\u0430\u044f \u0438\u043b\u0438 \u043a\u0440\u0435\u043c\u043e\u0432\u0430\u044f.",
-    "name": "\u041f\u0435\u0441\u043e\u0447\u043d\u044b\u0435",
-    "slug": "pesochnyie"
+    "action_flag": 3,
+    "action_time": "2016-02-12T20:43:43Z",
+    "object_repr": "\u0422\u0432\u043e\u0440\u043e\u0436\u043d\u044b\u0435",
+    "object_id": "5",
+    "change_message": "",
+    "user": 1,
+    "content_type": 7
   },
-  "model": "products.category",
-  "pk": 2
+  "model": "admin.logentry",
+  "pk": 13
 },
 {
   "fields": {
-    "description": "\u042d\u0442\u043e\u0442 \u0432\u0438\u0434 \u0442\u043e\u0440\u0442\u043e\u0432 \u0433\u043e\u0442\u043e\u0432\u0438\u0442\u0441\u044f \u043f\u043e\u043b\u043d\u043e\u0441\u0442\u044c\u044e \u0438\u0437 \u0442\u0432\u043e\u0440\u043e\u0436\u043d\u043e-\u043c\u0443\u0447\u043d\u043e\u0439 \u043c\u0430\u0441\u0441\u044b. \u041a\u0430\u043a \u043f\u0440\u0430\u0432\u0438\u043b\u043e \u0442\u0432\u043e\u0440\u043e\u0436\u043d\u044b\u0439 \u0442\u043e\u0440\u0442 \u0441\u043e\u0434\u0435\u0440\u0436\u0438\u0442 \u043a\u0443\u0441\u043e\u0447\u043a\u0438 \u0444\u0440\u0443\u043a\u0442\u043e\u0432, \u043a\u043e\u0442\u043e\u0440\u044b\u0435 \u0445\u043e\u0440\u043e\u0448\u043e \u0441\u043e\u0447\u0435\u0442\u0430\u044e\u0442\u0441\u044f \u0441 \u0442\u0432\u043e\u0440\u043e\u0433\u043e\u043c.",
-    "name": "\u0422\u0432\u043e\u0440\u043e\u0436\u043d\u044b\u0435",
-    "slug": "tvorozhnyie"
+    "action_flag": 3,
+    "action_time": "2016-02-12T20:43:43Z",
+    "object_repr": "\u0422\u0432\u043e\u0440\u043e\u0436\u043d\u044b\u0435",
+    "object_id": "4",
+    "change_message": "",
+    "user": 1,
+    "content_type": 7
   },
-  "model": "products.category",
-  "pk": 3
+  "model": "admin.logentry",
+  "pk": 14
 },
 {
   "fields": {
-    "category": 1,
-    "description": "\u0412\u043a\u0443\u0441 \u041c\u0435\u0434\u043e\u0432\u0438\u043a\u0430 \u043d\u0430\u0441\u0442\u043e\u043b\u044c\u043a\u043e \u043f\u0440\u0438\u044f\u0442\u043d\u044b\u0439, \u043d\u0435\u0436\u043d\u044b\u0439 \u0438 \u0430\u0440\u043e\u043c\u0430\u0442\u043d\u044b\u0439, \u0447\u0442\u043e \u0412\u0430\u043c \u0431\u0443\u0434\u0435\u0442 \u0442\u044f\u0436\u0435\u043b\u043e \u0435\u0433\u043e \u0437\u0430\u0431\u044b\u0442\u044c, \u043f\u043e\u043f\u0440\u043e\u0431\u043e\u0432\u0430\u0432 \u044d\u0442\u043e\u0442 \u0442\u043e\u0440\u0442 \u0445\u043e\u0442\u044f \u0431\u044b \u0440\u0430\u0437. ",
-    "price": "220.00",
-    "modified_at": "2016-02-12T00:29:55Z",
-    "slug": "medovik",
-    "created_at": "2016-02-12T00:02:06Z",
-    "name": "\u041c\u0435\u0434\u043e\u0432\u0438\u043a"
+    "action_flag": 1,
+    "action_time": "2016-02-12T20:59:27Z",
+    "object_repr": "\u0412\u0438\u0448\u043d\u0435\u0432\u044b\u0439 \u0447\u0438\u0437\u043a\u0435\u0439\u043a",
+    "object_id": "3",
+    "change_message": "",
+    "user": 1,
+    "content_type": 8
   },
-  "model": "products.product",
-  "pk": 1
+  "model": "admin.logentry",
+  "pk": 15
 },
 {
   "fields": {
-    "category": 1,
-    "description": "\u041f\u0440\u043e\u0434\u0443\u043a\u0442\u044b, \u043d\u0435\u043e\u0431\u0445\u043e\u0434\u0438\u043c\u044b\u0435 \u0434\u043b\u044f \u043f\u0440\u0438\u0433\u043e\u0442\u043e\u0432\u043b\u0435\u043d\u0438\u044f \u0448\u043e\u043a\u043e\u043b\u0430\u0434\u043d\u043e\u0433\u043e \u0442\u043e\u0440\u0442\u0430, \u043d\u0430\u0439\u0434\u0443\u0442\u0441\u044f \u043f\u0440\u0430\u043a\u0442\u0438\u0447\u0435\u0441\u043a\u0438 \u0432 \u043a\u0430\u0436\u0434\u043e\u043c \u0434\u043e\u043c\u0435. \u041d\u0435\u0436\u043d\u044b\u0439, \u0432\u043e\u0437\u0434\u0443\u0448\u043d\u044b\u0439 \u0448\u043e\u043a\u043e\u043b\u0430\u0434\u043d\u044b\u0439 \u0431\u0438\u0441\u043a\u0432\u0438\u0442 \u043d\u0435 \u043e\u0441\u0442\u0430\u0432\u0438\u0442 \u0440\u0430\u0432\u043d\u043e\u0434\u0443\u0448\u043d\u044b\u043c\u0438 \u0412\u0430\u0441 \u0438 \u0412\u0430\u0448\u0443 \u0441\u0435\u043c\u044c\u044e.",
-    "price": "270.00",
-    "modified_at": "2016-02-12T00:29:48Z",
-    "slug": "shokoladnyij-tort",
-    "created_at": "2016-02-12T00:09:12Z",
-    "name": "\u0428\u043e\u043a\u043e\u043b\u0430\u0434\u043d\u044b\u0439 \u0442\u043e\u0440\u0442"
+    "action_flag": 1,
+    "action_time": "2016-02-12T22:33:40Z",
+    "object_repr": "\u041c\u0435\u0434\u043e\u0432\u0438\u043a",
+    "object_id": "6",
+    "change_message": "",
+    "user": 1,
+    "content_type": 8
   },
-  "model": "products.product",
-  "pk": 2
+  "model": "admin.logentry",
+  "pk": 16
+},
+{
+  "fields": {
+    "action_flag": 1,
+    "action_time": "2016-02-12T22:33:56Z",
+    "object_repr": "\u041c\u0435\u0434\u043e\u0432\u0438\u043a",
+    "object_id": "7",
+    "change_message": "",
+    "user": 1,
+    "content_type": 8
+  },
+  "model": "admin.logentry",
+  "pk": 17
+},
+{
+  "fields": {
+    "action_flag": 1,
+    "action_time": "2016-02-12T22:34:30Z",
+    "object_repr": "\u0411\u0438\u0441\u043a\u0432\u0438\u0442\u043d\u044b\u0435",
+    "object_id": "6",
+    "change_message": "",
+    "user": 1,
+    "content_type": 7
+  },
+  "model": "admin.logentry",
+  "pk": 18
+},
+{
+  "fields": {
+    "action_flag": 3,
+    "action_time": "2016-02-12T22:34:41Z",
+    "object_repr": "\u0411\u0438\u0441\u043a\u0432\u0438\u0442\u043d\u044b\u0435",
+    "object_id": "6",
+    "change_message": "",
+    "user": 1,
+    "content_type": 7
+  },
+  "model": "admin.logentry",
+  "pk": 19
+},
+{
+  "fields": {
+    "action_flag": 3,
+    "action_time": "2016-02-12T22:34:54Z",
+    "object_repr": "\u041c\u0435\u0434\u043e\u0432\u0438\u043a",
+    "object_id": "7",
+    "change_message": "",
+    "user": 1,
+    "content_type": 8
+  },
+  "model": "admin.logentry",
+  "pk": 20
+},
+{
+  "fields": {
+    "action_flag": 3,
+    "action_time": "2016-02-12T22:34:54Z",
+    "object_repr": "\u041c\u0435\u0434\u043e\u0432\u0438\u043a",
+    "object_id": "6",
+    "change_message": "",
+    "user": 1,
+    "content_type": 8
+  },
+  "model": "admin.logentry",
+  "pk": 21
+},
+{
+  "fields": {
+    "action_flag": 1,
+    "action_time": "2016-02-13T17:52:20Z",
+    "object_repr": "\u0417\u043e\u043b\u043e\u0442\u043e\u0439 \u043a\u043b\u044e\u0447\u0438\u043a",
+    "object_id": "8",
+    "change_message": "",
+    "user": 1,
+    "content_type": 8
+  },
+  "model": "admin.logentry",
+  "pk": 22
+},
+{
+  "fields": {
+    "action_flag": 1,
+    "action_time": "2016-02-13T19:11:52Z",
+    "object_repr": "\u0414\u0430\u0440\u043e\u043c\u0438\u0440",
+    "object_id": "9",
+    "change_message": "",
+    "user": 1,
+    "content_type": 8
+  },
+  "model": "admin.logentry",
+  "pk": 23
+},
+{
+  "fields": {
+    "action_flag": 3,
+    "action_time": "2016-02-14T18:41:15Z",
+    "object_repr": "User2",
+    "object_id": "3",
+    "change_message": "",
+    "user": 1,
+    "content_type": 4
+  },
+  "model": "admin.logentry",
+  "pk": 24
+},
+{
+  "fields": {
+    "action_flag": 3,
+    "action_time": "2016-02-14T19:18:45Z",
+    "object_repr": "User2",
+    "object_id": "4",
+    "change_message": "",
+    "user": 1,
+    "content_type": 4
+  },
+  "model": "admin.logentry",
+  "pk": 25
+},
+{
+  "fields": {
+    "action_flag": 3,
+    "action_time": "2016-02-14T19:20:46Z",
+    "object_repr": "User2",
+    "object_id": "5",
+    "change_message": "",
+    "user": 1,
+    "content_type": 4
+  },
+  "model": "admin.logentry",
+  "pk": 26
+},
+{
+  "fields": {
+    "action_flag": 3,
+    "action_time": "2016-02-14T19:20:46Z",
+    "object_repr": "User3",
+    "object_id": "6",
+    "change_message": "",
+    "user": 1,
+    "content_type": 4
+  },
+  "model": "admin.logentry",
+  "pk": 27
+},
+{
+  "fields": {
+    "action_flag": 3,
+    "action_time": "2016-02-14T19:29:43Z",
+    "object_repr": "User3",
+    "object_id": "7",
+    "change_message": "",
+    "user": 1,
+    "content_type": 4
+  },
+  "model": "admin.logentry",
+  "pk": 28
+},
+{
+  "fields": {
+    "action_flag": 3,
+    "action_time": "2016-02-14T19:31:42Z",
+    "object_repr": "User2",
+    "object_id": "8",
+    "change_message": "",
+    "user": 1,
+    "content_type": 4
+  },
+  "model": "admin.logentry",
+  "pk": 29
+},
+{
+  "fields": {
+    "action_flag": 3,
+    "action_time": "2016-02-14T19:31:42Z",
+    "object_repr": "User3",
+    "object_id": "9",
+    "change_message": "",
+    "user": 1,
+    "content_type": 4
+  },
+  "model": "admin.logentry",
+  "pk": 30
+},
+{
+  "fields": {
+    "action_flag": 2,
+    "action_time": "2016-02-15T00:52:59Z",
+    "object_repr": "\u0414\u0430\u0440\u043e\u043c\u0438\u0440",
+    "object_id": "9",
+    "change_message": "Changed created_at and modified_at.",
+    "user": 1,
+    "content_type": 8
+  },
+  "model": "admin.logentry",
+  "pk": 31
+},
+{
+  "fields": {
+    "action_flag": 2,
+    "action_time": "2016-02-15T00:53:47Z",
+    "object_repr": "\u0417\u043e\u043b\u043e\u0442\u043e\u0439 \u043a\u043b\u044e\u0447\u0438\u043a",
+    "object_id": "8",
+    "change_message": "Changed created_at and modified_at.",
+    "user": 1,
+    "content_type": 8
+  },
+  "model": "admin.logentry",
+  "pk": 32
+},
+{
+  "fields": {
+    "action_flag": 2,
+    "action_time": "2016-02-15T00:54:28Z",
+    "object_repr": "\u0412\u0438\u0448\u043d\u0435\u0432\u044b\u0439 \u0447\u0438\u0437\u043a\u0435\u0439\u043a",
+    "object_id": "3",
+    "change_message": "Changed created_at and modified_at.",
+    "user": 1,
+    "content_type": 8
+  },
+  "model": "admin.logentry",
+  "pk": 33
+},
+{
+  "fields": {
+    "action_flag": 3,
+    "action_time": "2016-02-15T01:01:24Z",
+    "object_repr": "User2",
+    "object_id": "10",
+    "change_message": "",
+    "user": 1,
+    "content_type": 4
+  },
+  "model": "admin.logentry",
+  "pk": 34
+},
+{
+  "fields": {
+    "action_flag": 3,
+    "action_time": "2016-02-15T01:01:24Z",
+    "object_repr": "User3",
+    "object_id": "11",
+    "change_message": "",
+    "user": 1,
+    "content_type": 4
+  },
+  "model": "admin.logentry",
+  "pk": 35
+},
+{
+  "fields": {
+    "action_flag": 3,
+    "action_time": "2016-02-16T07:58:34Z",
+    "object_repr": "User2",
+    "object_id": "12",
+    "change_message": "",
+    "user": 1,
+    "content_type": 4
+  },
+  "model": "admin.logentry",
+  "pk": 36
+},
+{
+  "fields": {
+    "action_flag": 2,
+    "action_time": "2016-02-16T08:00:02Z",
+    "object_repr": "\u0414\u0430\u0440\u043e\u043c\u0438\u0440",
+    "object_id": "9",
+    "change_message": "Changed modified_at.",
+    "user": 1,
+    "content_type": 8
+  },
+  "model": "admin.logentry",
+  "pk": 37
+},
+{
+  "fields": {
+    "action_flag": 2,
+    "action_time": "2016-02-16T08:00:46Z",
+    "object_repr": "\u0417\u043e\u043b\u043e\u0442\u043e\u0439 \u043a\u043b\u044e\u0447\u0438\u043a",
+    "object_id": "8",
+    "change_message": "Changed created_at and modified_at.",
+    "user": 1,
+    "content_type": 8
+  },
+  "model": "admin.logentry",
+  "pk": 38
+},
+{
+  "fields": {
+    "action_flag": 2,
+    "action_time": "2016-02-16T08:01:02Z",
+    "object_repr": "\u0412\u0438\u0448\u043d\u0435\u0432\u044b\u0439 \u0447\u0438\u0437\u043a\u0435\u0439\u043a",
+    "object_id": "3",
+    "change_message": "Changed created_at.",
+    "user": 1,
+    "content_type": 8
+  },
+  "model": "admin.logentry",
+  "pk": 39
 }
 ]
