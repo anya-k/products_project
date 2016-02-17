@@ -5,7 +5,7 @@ import datetime
 from django.core.urlresolvers import reverse_lazy
 from django.contrib.auth.decorators import login_required
 from django.utils.decorators import method_decorator
-
+from django.shortcuts import get_object_or_404
 from models import Category, Product
 
 hours_delta = 24
@@ -21,20 +21,19 @@ class CategoryListView(ListView):
 
 class ProductListView(ListView):
     model = Product
+    category_slug = None
 
-    def get(self, request, *args, **kwargs):
-        slug = kwargs.get('slug')
-        category = Category.objects.filter(slug=slug)
-        if category:
-            self.queryset = Product.objects.filter(category_id=category[0].id)
-        return super(ProductListView, self).get(request, *args, **kwargs)
+    def get_queryset(self):
+        slug = self.kwargs.get('slug')
+        self.category_slug = slug
+        self.queryset = Product.objects.filter(category__slug=slug)
+        return self.queryset
 
     def get_context_data(self, **kwargs):
         context = super(ProductListView, self).get_context_data(**kwargs)
-        category_slug = self.kwargs.get('slug')
-        category = Category.objects.filter(slug=category_slug)
-        if category:
-            context['category'] = category[0]
+        # category_slug = self.kwargs.get('slug')
+        category = get_object_or_404(Category, slug=self.category_slug)
+        context['category'] = category
         return context
 
 
