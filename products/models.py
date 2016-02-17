@@ -41,8 +41,8 @@ class Product(models.Model):
     slug = models.SlugField(max_length=50, unique=True)
     description = models.TextField()
     price = models.DecimalField(max_digits=10, decimal_places=2, validators=[MinValueValidator(Decimal('0.01'))])
-    created_at = models.DateTimeField()
-    modified_at = models.DateTimeField()
+    created_at = models.DateTimeField(auto_now_add=True)
+    modified_at = models.DateTimeField(auto_now=True)
     category = models.ForeignKey(Category)
 
     def __unicode__(self):
@@ -51,8 +51,4 @@ class Product(models.Model):
     def save(self, *args, **kwargs):
         if not self.id:
             slug_create(self)
-            self.created_at = timezone.now()
-            self.modified_at = timezone.now()
-        else:
-            self.modified_at = timezone.now()
         super(Product, self).save(*args, **kwargs)
